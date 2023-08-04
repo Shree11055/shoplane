@@ -11,7 +11,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="./shopping.css" />
-  <title>Final-Project</title>
+  <link rel="stylesheet" href="./checkout.css" />
+  <title>Document</title>
 </head>
 
 <body>
@@ -21,8 +22,8 @@
         <div class="main-heading">
           <a href="/shopping.html"> <span>SHOP</span>LANE</a>
         </div>
-        <a href="#clothing-section">CLOTHING</a>
-        <a href="#accessory-section">ACCESSORIES</a>
+        <a href="./shopping.html#clothing-section">CLOTHING</a>
+        <a href="./shopping.html#accessory-section">ACCESSORIES</a>
       </div>
       <div class="search">
         <i class="fas fa-search"></i>
@@ -30,8 +31,8 @@
       </div>
       <div class="right-header">
         <div class="cart">
-          <p id="cart-count">0</p>
-          <a href="/checkout.html" class="cart_link"><i class="fas fa-shopping-cart cart_size"></i></a>
+          <p id="cart-count"></p>
+          <a href="/checkout.html" class="cart_link"><i class="fas fa-shopping-cart"></i></a>
         </div>
         <div class="avatar">
           <i class="fas fa-user-circle"></i>
@@ -39,43 +40,25 @@
       </div>
     </nav>
   </header>
-  <main>
-    <section class="slider">
-      <div id="slide">
-        <div class="slideshow-container">
-          <div class="mySlides fade">
-            <img src="https://res.cloudinary.com/dt2q0lr2m/image/upload/v1625503577/H_M_iwwozr.png" class="slide-image"
-              style="width: 100%" />
-          </div>
-          <div class="mySlides fade">
-            <img src="https://res.cloudinary.com/dt2q0lr2m/image/upload/v1625503627/US_dihxc3.png" class="slide-image"
-              style="width: 100%" />
-          </div>
-          <div class="mySlides fade">
-            <img src="https://res.cloudinary.com/dt2q0lr2m/image/upload/v1625503648/w_odwc0j.png" class="slide-image"
-              style="width: 100%" />
-          </div>
-          <div class="mySlides fade">
-            <img src="https://res.cloudinary.com/dt2q0lr2m/image/upload/v1625503606/puma_jfiinm.png" class="slide-image"
-              style="width: 100%" />
-          </div>
-        </div>
-        <br />
 
-        <div class="dots" style="text-align: center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
+  <main>
+    <section id="cart-section">
+      <h1 id="cart-heading">Checkout</h1>
+      <div id="cart-content">
+        <div id="cart-list">
+          <h3 class="section-heading">
+            Total Items:
+            <span id="items-count">0</span>
+          </h3>
+        </div>
+        <div>
+          <h3 class="section-heading">Total Amount</h3>
+          <p>Amount: Rs<span id="total-amount">0</span></p>
+          <a href="/thankyou.html"><button id="place-order">Place Order</button></a>
         </div>
       </div>
     </section>
-    <section id="clothing-section"></section>
-    <section id="accessory-section"></section>
   </main>
-
-  <img id="edyoda_logo" src="https://res.cloudinary.com/dt2q0lr2m/image/upload/v1625503514/Edyoda_gq6daf.png"
-    alt="Edyoda Projects Logo" />
 
   <footer>
     <div>
@@ -92,7 +75,7 @@
       <a href="/shopping.html" class="link-footer">Contact</a>
     </div>
     <div>
-      <h4 class="footer-heading">PARTNERS</h4>
+      <h4 class="footer-heading">PATNERS</h4>
       <a href="/shopping.html" class="link-footer">ZARA</a>
       <a href="/shopping.html" class="link-footer">PANTALOONS</a>
       <a href="/shopping.html" class="link-footer">LEVIS</a>
@@ -107,8 +90,10 @@
       <p href="/shopping.html" class="link-footer">United States</p>
     </div>
   </footer>
+
   <script src="./shopping.js"></script>
   <script src="./product_page.js"></script>
+  <script src="./checout.js"></script>
 </body>
 
 </html>
